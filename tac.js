@@ -122,12 +122,12 @@ const squareClick =(e)=>{
     if(!isGame || classList[1]==='X' || classList[1]==='O'){
         return;
     }
-    if(xIsNext){
+    if(isXNext){
         classList.add('X');
-        GameStatus();
+        gameStatus();
     }else{
         classList.add('O');
-        GameStatus();
+        gameStatus();
     }
 }
 //event listeners for restart and squareclick
