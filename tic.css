@@ -1,116 +1,71 @@
 *{
-    background: black;
+    
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Itim",cursive;
 }
+.background{
+    background: rgb(104, 104, 104);
+    height:100vh;
+    padding-top:1px;
 
-h2{
-    font-size: 60px;
+}
+title{
+    font-size: 40px;
     text-align: center;
-    color: rgb(96, 180, 219);
-    margin-top: 10px;
+    color: rgb(220, 231, 237);
+    margin-top: 10%;
 }
 
-body{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.display{
+    color:beige;
+    font-size: 25px;
+    text-align:center;
+    margin-top:1em ;
+    margin-bottom: 1em;
 }
-.window{
-    background-color: black;
-    margin: 50px;
-    padding: 50px;
-    position: fixed;
-    
+.result{
+    display:none;
+}
+.board{
+    margin:0 auto;
+    display:grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    max-width: 300px;
 }
 
-.box{
-    background-color: rgb(30, 56, 71);
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-gap: 10px;
-    margin-top: 100px;
-}
 .square{
-    background: black;
-    display: flex;
+    border:1px solid white;
+    min-width: 100px;
+    min-height: 100px;
+    display:flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
-    height: 130px;
-    width: 130px;
-}
-
-.square:hover{
-    background-color: rgb(14, 24, 27);
-    opacity:1;
-    
-}
-
-
-.restart{
-   color: black;
-   background-color: lightskyblue;
-   border: 1px solid aqua;
-   padding-top: 10px;
-   padding-left: 38px;
-   width: 140px;
-   height: 40px;
-   border-radius: 25px;
-   cursor: pointer;
-   position: fixed;
-   margin-top: 800px;
-   margin-left: 0px;
-   display: block;
-   font-size: 17px;
-}
-
-.restart:hover{
-    background-color: aqua;
-}
-.player{
-    position: fixed;
-    color: rgb(92, 184, 226);
     font-size: 50px;
-    margin-top: 450px;
-    margin-left: 1000px;
-    
+    cursor:pointer;
 }
-
-.player span{
-    color:  rgb(229, 235, 240);
+.playerX{
+    color:rgb(124, 223, 118);
 }
-
-
-.X::after{
-    content: 'X';
-    font-size: 100px;
-    color: rgb(92, 184, 226);
+.playerO{
+    color: rgb(89, 139, 225);
 }
-
-.O::after{
-    content: 'O';
-    color: rgb(229, 235, 240);
-    font-size: 110px;
+.controls{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
 }
-
-.won::after{
-    animation-name: win;
-    animation-duration:1s;
-   
-}
-
-@keyframes win{
-    0%{color:  black;}
-    10%{color: lightblue;}
-    20%{color: black;}
-    30%{color: lightblue}
-    40%{color: black}
-    50%{color: black;}
-    60%{color: lightblue;}
-    70%{color: black;}
-    80%{color: lightblue}
-    100%{color:black}
+#restart{
+    background-color: rgb(18, 18, 18);
+    color: rgb(239, 228, 228);
+    padding: 8px;
+    border-radius: 8px;
+    border:none;
+    font-size: 20px;
+    margin-left: 1em;
+    cursor: pointer;
 }
