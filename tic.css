@@ -3,9 +3,9 @@
     margin: 0;
     padding: 0;
     font-family: "Itim",cursive;
+    background: rgb(103, 102, 102);
 }
 .background{
-    background: rgb(103, 102, 102);
     height:100vh;
     padding-top:1px;
 
